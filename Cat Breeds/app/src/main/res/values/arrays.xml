@@ -1,0 +1,30 @@
+<resources>
+    <!-- Add Cat Fragment/Edit Dialog -->
+    <string-array name="size_array">
+        <item>@string/small_size</item>
+        <item>@string/medium_size</item>
+        <item>@string/large_size</item>
+    </string-array>
+
+    <string-array name="coat_length_array">
+        <item>@string/hairless_coat_length</item>
+        <item>@string/short_coat_length</item>
+        <item>@string/semi_long_coat_length</item>
+        <item>@string/long_coat_length</item>
+    </string-array>
+
+    <!-- Filter Fragment -->
+    <string-array name="sort_selector_entries">
+        <item>@string/breed_entry</item>
+        <item>@string/size_entry</item>
+        <item>@string/coat_length_entry</item>
+        <item>@string/country_entry</item>
+    </string-array>
+
+    <string-array name="sort_selector_values">
+        <item>@string/breed_value</item>
+        <item>@string/size_value</item>
+        <item>@string/coat_length_value</item>
+        <item>@string/country_value</item>
+    </string-array>
+</resources>

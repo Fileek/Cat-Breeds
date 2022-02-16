@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Cat Breeds</string>
+
+    <!-- Toolbar -->
+    <string name="main_fragment_label">Cat Breeds</string>
+    <string name="add_cat_fragment_label">Add New Cat</string>
+    <string name="filter_label">Filter</string>
+    <string name="settings_label">Settings</string>
+
+    <!-- Main Fragment/Edit Dialog -->
+    <string name="cat_image">Cat Image</string>
+
+    <string name="edit_button">Edit</string>
+
+    <string name="breed_header">Breed:</string>
+    <string name="size_header">Size:</string>
+    <string name="country_header">Country:</string>
+    <string name="coat_length_header">Coat Length:</string>
+
+    <string name="save_button">Save</string>
+
+    <string name="snack_bar_text">Cat deleted.</string>
+    <string name="snack_bar_undo_button">UNDO</string>
+
+    <!-- Add Cat Fragment/Edit Dialog -->
+    <string name="add_cat_button">ADD CAT</string>
+
+    <string name="breed_name_hint">Breed Name</string>
+    <string name="country_hint">Country</string>
+
+    <string name="small_size">Small</string>
+    <string name="medium_size">Medium</string>
+    <string name="large_size">Large</string>
+
+    <string name="hairless_coat_length">Hairless</string>
+    <string name="short_coat_length">Short</string>
+    <string name="semi_long_coat_length">Semi-Long</string>
+    <string name="long_coat_length">Long</string>
+
+    <string name="cat_already_exists_toast">Cat of this breed is already exists</string>
+
+    <!-- Filter Fragment -->
+    <string name="sort_category_header">Sort</string>
+
+    <string name="sort_switch_key" translatable="false">sort_switch</string>
+    <string name="enable_sort_title">Enable sort</string>
+
+    <string name="sort_selector_key" translatable="false">sort_selector</string>
+    <string name="sort_by_header">Sort by</string>
+
+    <string name="breed_entry">breed</string>
+    <string name="size_entry">size</string>
+    <string name="coat_length_entry">coat_length</string>
+    <string name="country_entry">country</string>
+
+    <string name="breed_value" translatable="false">breed</string>
+    <string name="size_value" translatable="false">size</string>
+    <string name="coat_length_value" translatable="false">coat_length</string>
+    <string name="country_value" translatable="false">country</string>
+
+    <!-- Settings Fragment -->
+    <string name="database_implementation_category_header">Database implementation</string>
+
+    <string name="room_checkbox_key" translatable="false">room_checkbox</string>
+    <string name="use_room_title">Use Room</string>
+    <string name="blank_edit_text_error">FIELD CANNOT BE EMPTY</string>
+</resources>

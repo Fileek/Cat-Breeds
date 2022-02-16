@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_text_size">16sp</dimen>
+    <dimen name="add_cat_item_width">300dp</dimen>
+    <dimen name="add_cat_item_margin">30dp</dimen>
+    <dimen name="text_view_vertical_margin">8dp</dimen>
+    <dimen name="text_view_start_margin">4dp</dimen>
+    <dimen name="breed_text_size">20sp</dimen>
+    <dimen name="common_text_size">12sp</dimen>
+    <dimen name="dialog_item_vertical_margin">16dp</dimen>
+    <dimen name="dialog_vertical_guideline_margin">16dp</dimen>
+</resources>

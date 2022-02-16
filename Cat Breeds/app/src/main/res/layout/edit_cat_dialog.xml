@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/left_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/dialog_vertical_guideline_margin" />
+
+        <TextView
+            android:id="@+id/breed_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/breed_header"
+            android:textSize="@dimen/breed_text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/breed_edit_text"
+            app:layout_constraintStart_toStartOf="@id/left_guideline"
+            app:layout_constraintTop_toTopOf="@id/breed_edit_text" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/breed_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:layout_marginStart="@dimen/text_view_start_margin"
+            android:autofillHints="name"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/breed_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/right_guideline"
+            app:layout_constraintStart_toEndOf="@id/breed_title"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="American Shorthair" />
+
+        <TextView
+            android:id="@+id/country_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/country_header"
+            android:textSize="@dimen/dialog_text_size"
+            app:layout_constraintBottom_toBottomOf="@id/country_edit_text"
+            app:layout_constraintStart_toStartOf="@id/left_guideline"
+            app:layout_constraintTop_toTopOf="@id/country_edit_text" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/country_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dialog_item_vertical_margin"
+            android:layout_marginStart="@dimen/text_view_start_margin"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/dialog_text_size"
+            app:layout_constraintEnd_toStartOf="@id/right_guideline"
+            app:layout_constraintStart_toEndOf="@id/country_title"
+            app:layout_constraintTop_toBottomOf="@id/breed_edit_text"
+            tools:text="United Kingdom" />
+
+        <TextView
+            android:id="@+id/coat_length_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coat_length_header"
+            android:textSize="@dimen/dialog_text_size"
+            app:layout_constraintBottom_toBottomOf="@id/coat_length_spinner"
+            app:layout_constraintStart_toStartOf="@id/left_guideline"
+            app:layout_constraintTop_toTopOf="@id/coat_length_spinner" />
+
+        <Spinner
+            android:id="@+id/coat_length_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dialog_item_vertical_margin"
+            android:layout_marginStart="@dimen/text_view_start_margin"
+            android:entries="@array/coat_length_array"
+            app:layout_constraintStart_toEndOf="@id/coat_length_title"
+            app:layout_constraintTop_toBottomOf="@id/country_edit_text"
+            tools:text="Semi-Long" />
+
+        <TextView
+            android:id="@+id/size_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/size_header"
+            android:textSize="@dimen/dialog_text_size"
+            app:layout_constraintBottom_toBottomOf="@id/size_spinner"
+            app:layout_constraintStart_toStartOf="@id/left_guideline"
+            app:layout_constraintTop_toTopOf="@id/size_spinner" />
+
+        <Spinner
+            android:id="@+id/size_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_view_start_margin"
+            android:layout_marginTop="@dimen/dialog_item_vertical_margin"
+            android:layout_marginBottom="4dp"
+            android:entries="@array/size_array"
+            app:layout_constraintBottom_toTopOf="@id/bottom_guideline"
+            app:layout_constraintStart_toEndOf="@id/size_title"
+            app:layout_constraintTop_toBottomOf="@id/coat_length_spinner"
+            tools:text="Medium" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bottom_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="4dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/right_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/dialog_vertical_guideline_margin" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="@id/right_guideline" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

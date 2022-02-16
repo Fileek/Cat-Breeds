@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/sort_category_header">
+
+        <SwitchPreferenceCompat
+            app:key="@string/sort_switch_key"
+            app:title="@string/enable_sort_title" />
+
+        <ListPreference
+            app:defaultValue="@string/breed_value"
+            app:dependency="@string/sort_switch_key"
+            app:entries="@array/sort_selector_entries"
+            app:entryValues="@array/sort_selector_values"
+            app:key="@string/sort_selector_key"
+            app:title="@string/sort_by_header"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
